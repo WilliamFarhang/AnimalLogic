@@ -34,16 +34,16 @@ struct GameRulesPopup: View {
             }
             .padding()
         }
-        .frame(width: 300, height: 400) // Ensure the frame size is adequate for scrolling
+        .frame(width: 300, height: 400)
         .background(Color.orange)
         .cornerRadius(10)
         .shadow(radius: 20)
-        .padding(40) // Adjust padding to prevent overlay issues
+        .padding(40)
         .overlay(
             Button(action: {
                 showingRules = false
             }) {
-                Color.clear // Transparent button for dismissing the popup
+                Color.clear 
             }
             .edgesIgnoringSafeArea(.all)
         )
