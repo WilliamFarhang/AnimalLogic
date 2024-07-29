@@ -7,18 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F7D0F8492C5414FB00BE3800 /* AnimalLogicNewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F8482C5414FB00BE3800 /* AnimalLogicNewApp.swift */; };
+		F7503D3A2C550A6E00F022AB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F7503D392C550A6E00F022AB /* Lottie */; };
+		F7503D3C2C550CB100F022AB /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7503D3B2C550CB100F022AB /* LottieView.swift */; };
+		F7503D3E2C550D5100F022AB /* win.json in Resources */ = {isa = PBXBuildFile; fileRef = F7503D3D2C550D5100F022AB /* win.json */; };
+		F7503D402C550D5600F022AB /* lost.json in Resources */ = {isa = PBXBuildFile; fileRef = F7503D3F2C550D5600F022AB /* lost.json */; };
+		F7D0F8492C5414FB00BE3800 /* BrainSafari.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F8482C5414FB00BE3800 /* BrainSafari.swift */; };
 		F7D0F84B2C5414FB00BE3800 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F84A2C5414FB00BE3800 /* ContentView.swift */; };
 		F7D0F84D2C5414FD00BE3800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D0F84C2C5414FD00BE3800 /* Assets.xcassets */; };
 		F7D0F8502C5414FD00BE3800 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D0F84F2C5414FD00BE3800 /* Preview Assets.xcassets */; };
+		F7D0F8572C54187600BE3800 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F8562C54187600BE3800 /* model.swift */; };
+		F7D0F8592C5418DD00BE3800 /* GameRulesPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F8582C5418DD00BE3800 /* GameRulesPopup.swift */; };
+		F7D8D4B52C56854B0058DB3A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D8D4B42C56854B0058DB3A /* WelcomeView.swift */; };
+		F7D8D4B92C56A5560058DB3A /* CustomStartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D8D4B82C56A5560058DB3A /* CustomStartButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7503D3B2C550CB100F022AB /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		F7503D3D2C550D5100F022AB /* win.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = win.json; sourceTree = "<group>"; };
+		F7503D3F2C550D5600F022AB /* lost.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lost.json; sourceTree = "<group>"; };
 		F7D0F8452C5414FB00BE3800 /* AnimalLogicNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalLogicNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7D0F8482C5414FB00BE3800 /* AnimalLogicNewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalLogicNewApp.swift; sourceTree = "<group>"; };
+		F7D0F8482C5414FB00BE3800 /* BrainSafari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainSafari.swift; sourceTree = "<group>"; };
 		F7D0F84A2C5414FB00BE3800 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F7D0F84C2C5414FD00BE3800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7D0F84F2C5414FD00BE3800 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7D0F8562C54187600BE3800 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		F7D0F8582C5418DD00BE3800 /* GameRulesPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRulesPopup.swift; sourceTree = "<group>"; };
+		F7D8D4B42C56854B0058DB3A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F7D8D4B82C56A5560058DB3A /* CustomStartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStartButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7503D3A2C550A6E00F022AB /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +67,16 @@
 		F7D0F8472C5414FB00BE3800 /* AnimalLogicNew */ = {
 			isa = PBXGroup;
 			children = (
-				F7D0F8482C5414FB00BE3800 /* AnimalLogicNewApp.swift */,
+				F7D0F8482C5414FB00BE3800 /* BrainSafari.swift */,
 				F7D0F84A2C5414FB00BE3800 /* ContentView.swift */,
+				F7D8D4B42C56854B0058DB3A /* WelcomeView.swift */,
+				F7D0F8562C54187600BE3800 /* model.swift */,
+				F7D0F8582C5418DD00BE3800 /* GameRulesPopup.swift */,
+				F7D8D4B82C56A5560058DB3A /* CustomStartButtonView.swift */,
+				F7503D3B2C550CB100F022AB /* LottieView.swift */,
 				F7D0F84C2C5414FD00BE3800 /* Assets.xcassets */,
+				F7503D3D2C550D5100F022AB /* win.json */,
+				F7503D3F2C550D5600F022AB /* lost.json */,
 				F7D0F84E2C5414FD00BE3800 /* Preview Content */,
 			);
 			path = AnimalLogicNew;
@@ -83,6 +106,9 @@
 			dependencies = (
 			);
 			name = AnimalLogicNew;
+			packageProductDependencies = (
+				F7503D392C550A6E00F022AB /* Lottie */,
+			);
 			productName = AnimalLogicNew;
 			productReference = F7D0F8452C5414FB00BE3800 /* AnimalLogicNew.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +137,9 @@
 				Base,
 			);
 			mainGroup = F7D0F83C2C5414FB00BE3800;
+			packageReferences = (
+				F7503D382C550A6E00F022AB /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = F7D0F8462C5414FB00BE3800 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +156,8 @@
 			files = (
 				F7D0F8502C5414FD00BE3800 /* Preview Assets.xcassets in Resources */,
 				F7D0F84D2C5414FD00BE3800 /* Assets.xcassets in Resources */,
+				F7503D3E2C550D5100F022AB /* win.json in Resources */,
+				F7503D402C550D5600F022AB /* lost.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D8D4B92C56A5560058DB3A /* CustomStartButtonView.swift in Sources */,
+				F7503D3C2C550CB100F022AB /* LottieView.swift in Sources */,
+				F7D0F8592C5418DD00BE3800 /* GameRulesPopup.swift in Sources */,
 				F7D0F84B2C5414FB00BE3800 /* ContentView.swift in Sources */,
-				F7D0F8492C5414FB00BE3800 /* AnimalLogicNewApp.swift in Sources */,
+				F7D0F8572C54187600BE3800 /* model.swift in Sources */,
+				F7D8D4B52C56854B0058DB3A /* WelcomeView.swift in Sources */,
+				F7D0F8492C5414FB00BE3800 /* BrainSafari.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +316,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +346,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +382,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F7503D382C550A6E00F022AB /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F7503D392C550A6E00F022AB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7503D382C550A6E00F022AB /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F7D0F83D2C5414FB00BE3800 /* Project object */;
 }

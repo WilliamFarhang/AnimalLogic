@@ -1,0 +1,8 @@
+platform :ios, '10.0'
+use_frameworks!
+
+target 'AnimalLogicNew' do project 'YourProjectName.xcodeproj'
+  pod 'lottie-ios'
+end
+
+
