@@ -31,7 +31,7 @@ struct WelcomeView: View {
                         .padding()
                     
                     // Image
-                    Image("gav2")
+                    Image("gave9")
                         .resizable()
                         .scaledToFit()
                         .shadow(color: Color(red: 0, green: 0, blue: 0), radius: 8, x: 6, y: 8)

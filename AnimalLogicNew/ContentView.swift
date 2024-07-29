@@ -161,13 +161,13 @@ struct LastRemovedAnimalView: View {
 //    var body: some View {
 //        ZStack {
 //            // Full-screen semi-transparent background to ensure it overlays all content
-//            Color.black.opacity(0.7)
+//            Color(Color(hex: "416E53"))
 //                .edgesIgnoringSafeArea(.all)
 //            
 //            // Lottie animation centered in the middle of the screen
-//            LottieView(filename: win ? "win" : "lost", loopMode: .playOnce)
-//                .frame(width: 300, height: 300) // Adjust size as needed
-//                .background(Color.clear)
+//            LottieView(filename: win ? "win" : "lost", loopMode: .loop)
+//                .frame(width: 100, height: 100) // Adjust size as needed
+//                .background(Color(hex: "416E53"))
 //                .padding()
 //        }
 //    }
@@ -179,6 +179,7 @@ struct GameOverView: View {
     var body: some View {
         Text(win ? "😻👍Win!" : "🙀👎Lost")
             .font(.largeTitle)
+            .fontWeight(.heavy)
             .padding()
             .foregroundColor(win ? .orange : .red)
     }
