@@ -19,6 +19,7 @@
 		F7D0F8592C5418DD00BE3800 /* GameRulesPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F8582C5418DD00BE3800 /* GameRulesPopup.swift */; };
 		F7D8D4B52C56854B0058DB3A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D8D4B42C56854B0058DB3A /* WelcomeView.swift */; };
 		F7D8D4B92C56A5560058DB3A /* CustomStartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D8D4B82C56A5560058DB3A /* CustomStartButtonView.swift */; };
+		F7DF8B042C59583600BE3F24 /* wining.json in Resources */ = {isa = PBXBuildFile; fileRef = F7DF8B032C59583600BE3F24 /* wining.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F7D0F8582C5418DD00BE3800 /* GameRulesPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRulesPopup.swift; sourceTree = "<group>"; };
 		F7D8D4B42C56854B0058DB3A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		F7D8D4B82C56A5560058DB3A /* CustomStartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStartButtonView.swift; sourceTree = "<group>"; };
+		F7DF8B032C59583600BE3F24 /* wining.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wining.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				F7503D3B2C550CB100F022AB /* LottieView.swift */,
 				F7D0F84C2C5414FD00BE3800 /* Assets.xcassets */,
 				F7503D3D2C550D5100F022AB /* win.json */,
+				F7DF8B032C59583600BE3F24 /* wining.json */,
 				F7503D3F2C550D5600F022AB /* lost.json */,
 				F7D0F84E2C5414FD00BE3800 /* Preview Content */,
 			);
@@ -154,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7DF8B042C59583600BE3F24 /* wining.json in Resources */,
 				F7D0F8502C5414FD00BE3800 /* Preview Assets.xcassets in Resources */,
 				F7D0F84D2C5414FD00BE3800 /* Assets.xcassets in Resources */,
 				F7503D3E2C550D5100F022AB /* win.json in Resources */,
@@ -311,6 +315,7 @@
 				DEVELOPMENT_TEAM = 345BZLKWW9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Brain Safary";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -341,6 +346,7 @@
 				DEVELOPMENT_TEAM = 345BZLKWW9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Brain Safary";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

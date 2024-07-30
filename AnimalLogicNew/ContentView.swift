@@ -55,7 +55,7 @@ struct NeumorphicBackground: View {
 }
 
 struct ContentView: View {
-    @ObservedObject var model = GameModel()
+    @StateObject private var model = GameModel()
     @State private var showingRules = false
     
     var body: some View {
@@ -65,15 +65,17 @@ struct ContentView: View {
             GeometryReader { geometry in
                 VStack {
                     TimerView(secondsElapsed: model.secondsElapsed)
-                    
-                    AnimalGridView(model: model)
-                    
-                    if let animal = model.lastRemovedAnimal {
-                        LastRemovedAnimalView(animal: animal)
-                    }
-                    
-                    if model.gameOver {
-                        GameOverView(win: model.win)
+                    ZStack{
+                        VStack {
+                            AnimalGridView(model: model)
+                            
+                            if let animal = model.lastRemovedAnimal {
+                                LastRemovedAnimalView(animal: animal)
+                            }
+                        }.opacity(model.gameOver ? 0.30 : 1)
+                        if model.gameOver {
+                            GameOverView(win: model.win)
+                        }
                     }
                     
                     ShuffleButton(model: model)
@@ -85,13 +87,13 @@ struct ContentView: View {
                         Image(systemName: "book.fill")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 30, height: 30) // Adjust size of the icon
+                            .frame(width: 30, height: 30)
                             .padding()
-                            .background(Color.orange) // Background color for the button
-                            .foregroundColor(.white) // Color of the icon
-                            .clipShape(Circle()) // Circular button
+                            .background(Color.orange)
+                            .foregroundColor(.white)
+                            .clipShape(Circle())
                             .overlay(Circle()
-                                .stroke(Color.orange, lineWidth: 2)) // Border color and width
+                                .stroke(Color.orange, lineWidth: 2))
                     }
                     .padding()
                 }
@@ -155,35 +157,30 @@ struct LastRemovedAnimalView: View {
     }
 }
 
-//struct GameOverView: View {
-//    var win: Bool
-//    
-//    var body: some View {
-//        ZStack {
-//            // Full-screen semi-transparent background to ensure it overlays all content
-//            Color(Color(hex: "416E53"))
-//                .edgesIgnoringSafeArea(.all)
-//            
-//            // Lottie animation centered in the middle of the screen
-//            LottieView(filename: win ? "win" : "lost", loopMode: .loop)
-//                .frame(width: 100, height: 100) // Adjust size as needed
-//                .background(Color(hex: "416E53"))
-//                .padding()
-//        }
-//    }
-//}
-
 struct GameOverView: View {
     var win: Bool
     
     var body: some View {
-        Text(win ? "😻👍Win!" : "🙀👎Lost")
-            .font(.largeTitle)
-            .fontWeight(.heavy)
-            .padding()
-            .foregroundColor(win ? .orange : .red)
+        ZStack {
+            // Lottie animation centered in the middle of the screen
+            LottieView(filename: win ? "wining" : "lost", loopMode: .loop)
+                .frame(width: 250, height: 250) // Adjust size as needed
+                .padding()
+        }
     }
 }
+
+//struct GameOverView: View {
+//    var win: Bool
+//    
+//    var body: some View {
+//        Text(win ? "You Win!" : "You Lost")
+//            .font(.largeTitle)
+//            .fontWeight(.heavy)
+//            .padding()
+//            .foregroundColor(win ? .orange : .red)
+//    }
+//}
 
 struct ShuffleButton: View {
     @ObservedObject var model: GameModel
