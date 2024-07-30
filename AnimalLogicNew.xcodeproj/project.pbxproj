@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F7503D3A2C550A6E00F022AB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F7503D392C550A6E00F022AB /* Lottie */; };
 		F7503D3C2C550CB100F022AB /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7503D3B2C550CB100F022AB /* LottieView.swift */; };
-		F7503D3E2C550D5100F022AB /* win.json in Resources */ = {isa = PBXBuildFile; fileRef = F7503D3D2C550D5100F022AB /* win.json */; };
 		F7503D402C550D5600F022AB /* lost.json in Resources */ = {isa = PBXBuildFile; fileRef = F7503D3F2C550D5600F022AB /* lost.json */; };
 		F7D0F8492C5414FB00BE3800 /* BrainSafari.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F8482C5414FB00BE3800 /* BrainSafari.swift */; };
 		F7D0F84B2C5414FB00BE3800 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F84A2C5414FB00BE3800 /* ContentView.swift */; };
@@ -24,7 +23,6 @@
 
 /* Begin PBXFileReference section */
 		F7503D3B2C550CB100F022AB /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
-		F7503D3D2C550D5100F022AB /* win.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = win.json; sourceTree = "<group>"; };
 		F7503D3F2C550D5600F022AB /* lost.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lost.json; sourceTree = "<group>"; };
 		F7D0F8452C5414FB00BE3800 /* AnimalLogicNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalLogicNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D0F8482C5414FB00BE3800 /* BrainSafari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainSafari.swift; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 				F7D8D4B82C56A5560058DB3A /* CustomStartButtonView.swift */,
 				F7503D3B2C550CB100F022AB /* LottieView.swift */,
 				F7D0F84C2C5414FD00BE3800 /* Assets.xcassets */,
-				F7503D3D2C550D5100F022AB /* win.json */,
 				F7DF8B032C59583600BE3F24 /* wining.json */,
 				F7503D3F2C550D5600F022AB /* lost.json */,
 				F7D0F84E2C5414FD00BE3800 /* Preview Content */,
@@ -160,7 +157,6 @@
 				F7DF8B042C59583600BE3F24 /* wining.json in Resources */,
 				F7D0F8502C5414FD00BE3800 /* Preview Assets.xcassets in Resources */,
 				F7D0F84D2C5414FD00BE3800 /* Assets.xcassets in Resources */,
-				F7503D3E2C550D5100F022AB /* win.json in Resources */,
 				F7503D402C550D5600F022AB /* lost.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -170,18 +170,6 @@ struct GameOverView: View {
     }
 }
 
-//struct GameOverView: View {
-//    var win: Bool
-//    
-//    var body: some View {
-//        Text(win ? "You Win!" : "You Lost")
-//            .font(.largeTitle)
-//            .fontWeight(.heavy)
-//            .padding()
-//            .foregroundColor(win ? .orange : .red)
-//    }
-//}
-
 struct ShuffleButton: View {
     @ObservedObject var model: GameModel
     
