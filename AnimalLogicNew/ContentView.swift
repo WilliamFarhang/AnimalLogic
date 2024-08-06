@@ -47,7 +47,7 @@ struct AnimalCell: View {
 struct NeumorphicBackground: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 10)
-            .fill(Color(UIColor.systemGray6))
+            .fill(Color(UIColor.white))
             .shadow(color: Color.black.opacity(0.3), radius: 10, x: 5, y: 5)
             .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
             .padding(2)

@@ -14,12 +14,14 @@ struct GameRulesPopup: View {
         VStack {
             Text("Game Rules")
                 .font(.headline)
+                .foregroundColor(.black)
                 .textFieldStyle(.plain)
                 .padding()
             
             ScrollView {
-                Text("1. Tap an animal to remove it from the grid.\n\n2. Animals can only be removed if they match the type or color of the last removed animal.\n\n3. The goal is to clear the grid.\n\n4. Use the Shuffle button to start a new game.")
+                Text("1. The objective is to remove all the animals.\n\n2. Only animals that are the same shape or color as the previously removed animals are allowed to exit.\n\n3. No animal can jump over another animal to exit, so the last animal in each row must be of the same color or shape.\n\n4. You can shuffle the animals")
                     .font(.subheadline)
+                    .foregroundColor(.black)
                     .textFieldStyle(.automatic)
                     .padding()
             }

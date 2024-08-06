@@ -311,6 +311,7 @@
 				DEVELOPMENT_TEAM = 345BZLKWW9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimalLogicNew/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Brain Safary";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -342,6 +343,7 @@
 				DEVELOPMENT_TEAM = 345BZLKWW9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimalLogicNew/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Brain Safary";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
