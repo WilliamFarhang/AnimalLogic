@@ -37,6 +37,9 @@ struct AnimalCell: View {
                         isInvalidMove = true
                     }
                     audioManager.playSound(for: animal)
+                    // vibration feature
+                    let generator = UINotificationFeedbackGenerator()
+                        generator.notificationOccurred(.error)
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         withAnimation {
