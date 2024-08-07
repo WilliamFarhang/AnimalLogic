@@ -5,10 +5,12 @@
 //  Created by william farhang on 2024-07-26.
 //
 import SwiftUI
+import AVFoundation
 
 struct AnimalCell: View {
     var animal: Animal
     @State private var isInvalidMove = false
+    @ObservedObject var audioManager: AudioManager
     var model: GameModel?
     var row: Int
     var column: Int
@@ -34,6 +36,8 @@ struct AnimalCell: View {
                     withAnimation {
                         isInvalidMove = true
                     }
+                    audioManager.playSound(for: animal)
+                    
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         withAnimation {
                             isInvalidMove = false
@@ -55,6 +59,7 @@ struct NeumorphicBackground: View {
 }
 
 struct ContentView: View {
+    @StateObject private var audioManager = AudioManager()
     @StateObject private var model = GameModel()
     @State private var showingRules = false
     
@@ -67,7 +72,7 @@ struct ContentView: View {
                     TimerView(secondsElapsed: model.secondsElapsed)
                     ZStack{
                         VStack {
-                            AnimalGridView(model: model)
+                            AnimalGridView(model: model, audioManager: audioManager)
                             
                             if let animal = model.lastRemovedAnimal {
                                 LastRemovedAnimalView(animal: animal)
@@ -129,12 +134,13 @@ struct TimerView: View {
 
 struct AnimalGridView: View {
     @ObservedObject var model: GameModel
+    @ObservedObject var audioManager: AudioManager
     
     var body: some View {
         LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 10), count: 4), spacing: 0) {
             ForEach(0..<4) { row in
                 ForEach(0..<4) { column in
-                    AnimalCell(animal: model.grid[row][column], model: model, row: row, column: column)
+                    AnimalCell(animal: model.grid[row][column], audioManager: audioManager, model: model, row: row, column: column)
                         .disabled(model.gameOver)
                 }
             }
@@ -144,11 +150,12 @@ struct AnimalGridView: View {
 }
 
 struct LastRemovedAnimalView: View {
+    @StateObject private var audioManager = AudioManager()
     var animal: Animal
     
     var body: some View {
         VStack {
-            AnimalCell(animal: animal, model: nil, row: 0, column: 0) // Model, row, and column are not used here
+            AnimalCell(animal: animal, audioManager: audioManager, model: nil, row: 0, column: 0) // Model, row, and column are not used here
                 .padding()
                 .frame(width: 80, height: 80)
                 .background(NeumorphicBackground())
